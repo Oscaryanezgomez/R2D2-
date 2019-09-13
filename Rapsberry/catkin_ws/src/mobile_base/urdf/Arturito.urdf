@@ -1,0 +1,44 @@
+<robot name="Arturito">
+	<link name="base_link">
+		<visual>
+			<!--Origen del Link -->
+			<origin xyz="0 0 0"rpy="0 0 0"/>
+			<geometry>
+				<cylinder length="0.09" radius="0.126"/>
+			</geometry>
+				<material name="blue"><color rgba="0 0 1 1"/> </material>
+		</visual>
+	</link>
+	
+	<joint name="left_wheel_joint_connect" type="fixed">
+		<origin xyz="0 0.198 0.0155" rpy="0 1.5708 1.5708"/>
+		<parent link="base_link"/>
+		<child link="left_wheel_link"/>
+	</joint>
+	<link name="left_wheel_link">
+		<visual>
+			<origin xyz="0 0 -0.1" rpy="0 0 0"/>
+		<geometry>
+                         <cylinder length="0.019" radius="0.021"/>
+                </geometry>
+                <material name="black"><color rgba="0 0 0 1"/> </material>
+                </visual>
+         </link>
+	<joint name="right_wheel_joint_connect" type="fixed">
+                 <origin xyz="0 0.198 0.0155" rpy="0 1.5708 1.5708"/>
+                 <parent link="base_link"/>
+                 <child link="right_wheel_link"/>
+         </joint>
+         <link name="right_wheel_link">
+                 <visual>
+                         <origin xyz="0 0 -0.046" rpy="0 0 0"/>
+                 <geometry>
+                          <cylinder length="0.019" radius="0.021"/>
+                 </geometry>
+                 <material name="black"><color rgba="0 0 0 1"/> </material>
+                 </visual>
+          </link>
+
+
+</robot>
+

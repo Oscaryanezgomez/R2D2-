@@ -1,0 +1,8 @@
+prefix=/home/diego/catkin_ws/install
+
+Name: launch
+Description: Description of launch
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/diego/catkin_ws/install/lib 
+Requires: 
